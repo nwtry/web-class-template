@@ -1,0 +1,283 @@
+/* This is my main CSS style document */
+
+/* CSS Reset */
+
+* {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    box-sizing:border-box;
+}
+
+header, nav, main, section, article, footer {
+    display:block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration:none;
+    color:black;
+    display: inline-block;
+}
+
+img {
+    width:25%;
+}
+
+/* Global Styles */
+
+body {
+    font-family: "Oxygen", sans-serif;
+    background-color: #003049;
+    color: #cac4ce;
+    text-align: center;
+}
+
+
+/* Header Styles */
+
+header {
+    background-color: #59114d;
+    color: #e98a15;
+    padding: 1rem 0;
+}
+
+header img {
+    width: 50%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Nav Styles */
+
+nav {
+    background-color: #59114d;
+    transition: height 500ms ease-in-out;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: #f0ae5f;
+    font-size: 1.2rem;
+    padding:1rem 3rem;
+    transition: color200ms ease-in-out, background-color 200ms ease-in-out;
+}
+
+.nav-link:hover {
+    color:#e98a15;
+    background-color: #4b063f;
+    font-weight: 900;
+}
+
+.toggle-button {
+    display: none;
+}
+
+/* Section Styles */
+
+section {
+    padding: 1rem 10%;
+}
+
+section h2 {
+    margin-bottom: 0.5rem;
+}
+
+.section-flex {
+    display: flex;
+   
+}
+
+.section-flex img {
+    width: 100%;
+    align-items: center;
+
+}
+
+article {
+    margin: 0.5rem 0;
+}
+
+.flex img {
+    width: 100%;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+img {
+    border-radius:2rem;
+}
+
+.cta-button {
+    font-size: 1.2rem;
+    color:#e98a15;
+    padding: 0.5rem;
+    border: 3px solid #e98a15;
+    border-radius: 2rem;
+    margin: 1rem auto;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #e98a15;
+    color: #003049;
+}
+
+.left-flex {
+    width: 30%;
+    margin: 0.1rem;
+}
+
+.img-align {
+    width: 10%;
+    align-items: left;
+}
+
+.right-flex {
+    width: 70%;
+    margin: 0.1rem;
+}
+
+/* table styles */
+
+table {
+    width: 80%;
+    margin: 1rem 0;
+    background-color: peachpuff;
+    }
+
+th, td {
+    padding: 0.5rem 0;
+    border: 2px black solid;
+    color: rgb(79, 79, 221);
+}
+
+td:hover,
+th:hover {
+    color: rgb(0, 183, 255);
+}
+
+caption {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+/* logo styles */
+
+.logo {
+    width: 20%;
+}
+
+.logo-image {
+    width: 100%;
+    margin: 1rem;
+}
+
+.heading {
+    width: 80%;
+}
+
+/* Utility Classes */
+
+.red-font {
+    color: red;
+}
+
+.reverse-flex {
+    flex-direction: row-reverse;
+}
+
+/* example?? */
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 426px)  {
+    h1 {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 0.8rem;
+    }
+
+    h3 {
+        font-size: 0.7rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        padding: 0.8rem;
+    }
+
+    nav {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .visible {
+        height: 50vh;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .cta-button{
+        font-size: 0.8rem;
+    }
+
+    .section-flex {
+        flex-direction: column;
+    }
+
+    .left-flex {
+        /* flex-direction: column; */
+        margin: 0%;
+        width: 100%;
+    }
+
+    .right-flex {
+        /* flex-direction: column; */
+        margin: 0%;
+        width: 100%;
+    }
+
+    table {
+        margin: 1rem 10%;
+    }
+
+    .toggle-button {
+        display: block;
+        cursor: pointer;
+        padding: 0 2rem;
+        font-size: 6rem;
+    }
+}
